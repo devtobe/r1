@@ -1,0 +1,128 @@
+
+Cources
+
+1. Computer Science overview
+2. Programming: Python (Java, C++, Javascript)
+3. Algorithm
+4. Web
+5. Database
+6. Linux
+7. Statistics
+8. Tools
+
+
+C2: Python
+
+learning materials:
+	ref1: http://introtopython.org/ (step1-6)
+	https://www.reddit.com/r/learnpython/wiki/index
+
+step1:
+	get started with Hello World
+	Variables, Strings, and Numbers
+	
+step3:
+	Lists and Tuples
+
+step4:
+	Introducing Functions
+	If Statements
+	While Loops and Input
+
+step5:
+	Basic Terminal Apps
+	Dictionaries
+
+step6:
+	More Functions
+	Classes
+
+step7:
+	debug python code in a debugger
+	
+step8:
+	use git / github to manage code
+	
+step9:
+	download code from github and read
+
+
+C6: Linux
+learning materials:
+step1:
+	linux commands: 
+		ls -lta 
+		cd 
+		man
+
+step2:
+	linux commands: 
+		mkdir -p
+		mv 
+		ln -nfs 
+		rm -rf
+
+step3:
+	linux commands: 
+		head -3
+		tail -5
+		cat -a 
+		more 
+		less
+		grep -i 
+
+step4:
+	linux commands: 
+		find -name
+		ps
+		top
+		kill
+	
+step5:
+	vi
+	
+step6:
+	awk
+	sed
+
+
+C8: Tools
+learning materials:
+	python
+	sublime
+	notepad++
+	git
+	github
+	eclipse
+	pydev
+	java
+	maven
+step1
+	install python / sublime / notepad++
+	edit python code and run 
+
+step2
+	install git
+	create git repo and commit code
+	
+step3
+	push code to github
+	download projects from github
+
+step4
+	install eclipse
+	install pydev
+	use git in eclipse
+	
+step5
+	debug python code in eclipse
+
+step6
+	install java
+	debug java code in eclipse
+
+step7
+	install maven
+	manage maven dependencies in eclipse
+
+	
