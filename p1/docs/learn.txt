@@ -1,104 +1,152 @@
 
-Cources
+Learning Plan (v1.1)
 
-1. Computer Science overview
-2. Programming: Python (Java, C++, Javascript)
-3. Algorithm
-4. Web
-5. Database
-6. Linux
-7. Statistics
-8. Tools
+stage 1: 
+	(1a) Python
+	(1b) Linux
+	(1c) Dev Tools
+
+stage 2
+	(2a) Algorithm
+	(2b) Python libraries
+	(2c) Java
+
+stage 3: 
+	(3a) Database
+	(3b) Web
+	(3c) Javascript
+	
+stage 4:
+	(4a) Machine Learning
+	(4b) Computer Science overview
+	(4c) C++
+
+stage 5:
+	(5a) Deep Learning frameworks
+	(5b) Java libraries
+	(5c) C++ libraries
 
 
-C2: Python
+(1a) Python:
 
 learning materials:
-	ref1: http://introtopython.org/ (step1-6)
-	https://www.reddit.com/r/learnpython/wiki/index
+	step1-5: http://introtopython.org/
+	step6: https://docs.python.org/3/tutorial/
+	step7: https://docs.python.org/3/library/index.html
+	step8: https://projecteuler.net/
+	step9: https://wiki.python.org/moin/UsefulModules#Database
+	all: https://www.reddit.com/r/learnpython/wiki/index
 
 step1:
 	get started with Hello World
 	Variables, Strings, and Numbers
 	
-step3:
+step2:
 	Lists and Tuples
 
-step4:
+step3:
 	Introducing Functions
 	If Statements
 	While Loops and Input
 
-step5:
+step4:
 	Basic Terminal Apps
 	Dictionaries
 
-step6:
+step5:
 	More Functions
 	Classes
 
+step6:
+	official python tutorial
+
 step7:
-	debug python code in a debugger
+	standard libraries
 	
 step8:
-	use git / github to manage code
-	
+	project Euler question 1-50
+
 step9:
-	download code from github and read
+	open source python libraries
 
 
-C6: Linux
+(1b) Linux
 learning materials:
-step1:
-	linux commands: 
+	step1-13: http://linuxcommand.org/tlcl.php
+	other:
+		http://linuxcommand.org/lc3_learning_the_shell.php
+		https://ryanstutorials.net/linuxtutorial/
+		https://diyhacking.com/linux-commands-for-beginners/
+step1: file navigation (ch 1, 2, 3)
+	commands
 		ls -lta 
 		cd 
-		man
+		pwd
+	file related concepts
 
-step2:
-	linux commands: 
+step2: file manipulation (ch 4)
+	commands
 		mkdir -p
 		mv 
 		ln -nfs 
 		rm -rf
+		chmod +x
+		cp -R
+		touch
 
-step3:
-	linux commands: 
+step3: working with commands (ch 5)
+
+step3: redirection (ch 6)
+	commands
 		head -3
-		tail -5
+		tail -5 -f
 		cat -a 
 		more 
 		less
-		grep -i 
+		grep -i
 
-step4:
-	linux commands: 
-		find -name
-		ps
+step4: command line (ch 7, 8)
+
+step5: permissions (ch 9)
+	chmod +x
+	
+step6: processes (ch 10)
+	commands
 		top
+		ps
 		kill
-	
-step5:
-	vi
-	
-step6:
-	awk
-	sed
+	OS concepts
+
+step7: edit files (ch 12)
+	commands
+		vi
+		tr
+		awk
+		sed
+		
+step8: search (ch 17)
+
+step9: regex (ch 19)
+
+step10: text processing (ch 20)	
+
+step11; archiving (ch 18)
+
+step12: networking (ch 16)
+
+step13: bash (ch 24-34)
 
 
-C8: Tools
+(1c) Dev Tools
 learning materials:
-	python
-	sublime
-	notepad++
-	git
-	github
-	eclipse
-	pydev
-	java
-	maven
+	python: http://introtopython.org/programming_environment.html
+	git: https://git-scm.com/
+	github: https://github.com/
+	java: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+	eclipse: https://www.eclipse.org/home/index.php
+
 step1
-	install python / sublime / notepad++
+	install python
 	edit python code and run 
 
 step2
@@ -122,7 +170,6 @@ step6
 	debug java code in eclipse
 
 step7
-	install maven
 	manage maven dependencies in eclipse
 
 	
