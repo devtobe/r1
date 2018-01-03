@@ -1,40 +1,43 @@
 
-Learning Plan (v1.1)
+Learning Plan
 
 stage 1: 
-	(1a) Python
-	(1b) Linux
-	(1c) Dev Tools
+	101 Python
+	102 Linux
+	103 Dev Tools
 
 stage 2
-	(2a) Algorithm
-	(2b) Python libraries
-	(2c) Java
+	201 Javascript
+	202 Algorithm
+	203 Data Management
 
 stage 3: 
-	(3a) Database
-	(3b) Web
-	(3c) Javascript
+	301 Java
+	302 Advanced Python
+	303 Machine Learning
 	
 stage 4:
-	(4a) Machine Learning
-	(4b) Computer Science overview
-	(4c) C++
+	401 C++
+	402 Web
+	403 Advanced Machine Learning
 
 stage 5:
-	(5a) Deep Learning frameworks
-	(5b) Java libraries
-	(5c) C++ libraries
+	501 Advanced Java
+	502 Advanced C++
+	503 Computer Science Overview
 
 
-(1a) Python:
+101 Python:
 
 learning materials:
 	step1-5: http://introtopython.org/
 	step6: https://docs.python.org/3/tutorial/
 	step7: https://docs.python.org/3/library/index.html
+		https://doc.lagout.org/programmation/python/
+		https://doc.lagout.org/programmation/python/The%20Python%20Standard%20Library%20by%20Example.pdf
 	step8: https://projecteuler.net/
-	step9: https://wiki.python.org/moin/UsefulModules#Database
+	step9: http://rosettacode.org/
+	step10: http://code.activestate.com/recipes/langs/python/
 	all: https://www.reddit.com/r/learnpython/wiki/index
 
 step1:
@@ -57,26 +60,32 @@ step5:
 	More Functions
 	Classes
 
-step6:
+step6 (x3):
 	official python tutorial
+	other python tutorials
 
-step7:
-	standard libraries
+step7 (x10)
+	common standard libraries
 	
-step8:
-	project Euler question 1-50
+step8 (x3):
+	project Euler question 1-10
 
-step9:
-	open source python libraries
+step9 (x3):
+	5 rosetta code tasks
+	
+step10 (x3):
+	5 activesate recipes
 
 
-(1b) Linux
+102 Linux
+
 learning materials:
 	step1-13: http://linuxcommand.org/tlcl.php
-	other:
+	others:
 		http://linuxcommand.org/lc3_learning_the_shell.php
 		https://ryanstutorials.net/linuxtutorial/
 		https://diyhacking.com/linux-commands-for-beginners/
+		
 step1: file navigation (ch 1, 2, 3)
 	commands
 		ls -lta 
@@ -137,39 +146,48 @@ step12: networking (ch 16)
 step13: bash (ch 24-34)
 
 
-(1c) Dev Tools
+103 Dev Tools
+
 learning materials:
-	python: http://introtopython.org/programming_environment.html
-	git: https://git-scm.com/
-	github: https://github.com/
-	java: http://www.oracle.com/technetwork/java/javase/downloads/index.html
-	eclipse: https://www.eclipse.org/home/index.php
+	step1: https://www.wikihow.com/Open-a-Terminal-Window-in-Mac
+		https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10
+	step2: http://introtopython.org/programming_environment.html
+	step3: https://git-scm.com/
+	step4: https://github.com/
+	step5: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+			https://www.eclipse.org/home/index.php
+	step6: http://www.pydev.org/
+	step7: https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
 step1
-	install python
-	edit python code and run 
+	open a linux shell on windows / mac
+	run basic linux commands
 
 step2
+	install package managers
+	install python
+	install sublime text
+	edit python code and run 
+
+step3 (x3)
 	install git
 	create git repo and commit code
 	
-step3
+step4
 	push code to github
 	download projects from github
 
-step4
+step5 (x3)
+	install java
 	install eclipse
-	install pydev
 	use git in eclipse
 	
-step5
+step6
+	install pydev through eclipse marketplace
 	debug python code in eclipse
 
-step6
-	install java
-	debug java code in eclipse
-
 step7
+	debug java code in eclipse
 	manage maven dependencies in eclipse
 
 	
