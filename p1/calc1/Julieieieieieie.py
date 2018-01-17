@@ -116,6 +116,171 @@ for computer_language in computer_languages:
     print("I find learning" + " " + computer_language.title() + " " + "is very interesting.\n")
 print('But among all, I find Python is my favorite.')
 
+print()
 
+#The enumerate() function tracks the index of each item for you, as it loops through the list.
+dogs = ('border collie','labrador retriever','australian shepherd','australian cattle dog')
+for index, dog in enumerate(dogs):
+    print('Place:' + str(index+1) + ' Dog:' + dog.title())
 
+print()
 
+kids = ('Will','Morgan','Shirley','Benjamin')
+for kid in kids:
+    print('I love my kid' + " " + kid + " " + "very much.\n")
+
+print()
+
+kids = ('Will','Morgan','Shirley','Benjamin')
+for index, kid in enumerate(kids):
+    print("My " + str(index+1) + " kid is " + kid + ".\n")
+
+basketball_players = ('JeremyL','YaoM','StephenC','MichaelJ')
+for index, basketball_player in enumerate(basketball_players):
+    print(basketball_player + ' ranks ' + str(index+1) + '.\n')
+    print(basketball_players.index('YaoM'))
+
+#You can test whether an item is in a list using the "in" keyword. 
+    print("StephenC" in basketball_players)
+    print("ChuanH" in basketball_players)
+
+print()
+
+dogs = ['shiba','labrador retriver','collie']
+dogs.append('australian cattle')
+for dog in dogs:
+    print(dog.title() + "s are very cute.")
+#We can also insert items anywhere we want in a list, using the insert() function. 
+#We specify the position we want the item to have, and everything from that point on is shifted one position to the right.
+dogs.insert(1,'poodle')
+for dog in dogs:
+    print('\n' + dog.title() + "s are very cute.")
+
+print()
+# Create an empty list to hold our users.
+usernames = []
+usernames.append('shirley')
+usernames.append('benson')
+usernames.append('emma')
+usernames.append('julie')
+for username in usernames:
+    print('Welcome ' + username.title() + '!')
+# Recognize our first user, and welcome our newest user.
+print('Thank you for being our first user, ' + usernames[0].title() + '!')
+print('Thank you for being our newest user, ' + usernames[-1].title() + '!')
+
+print()
+
+# Put students in alphabetical order.
+usernames.sort()
+print("Our usernames are in alphabetical order:")
+for username in usernames:
+    print(username.title())
+usernames.sort(reverse = True)
+print("Our usernames are in reverse alphabetical order:")
+for username in usernames:
+    print(username.title())
+print()
+
+usernames = ['julie','emma','mimi','aaron','benson']
+# Whenever you consider sorting a list, keep in mind that you can not recover the original order.
+# If you want to display a list in sorted order, but preserve the original order, you can use the sorted() function.
+print('Here is the list in alphabetical order:')
+for username in sorted(usernames):
+    print(username.title())
+print('\nHere is the list in reverse alphabetical order:')
+for username in sorted(usernames, reverse=True):
+    print(username.title())
+print('\nHere is the list in original order:')
+for username in usernames: 
+    print(username.title())
+#There is one more order we can use, and that is the reverse of the original order of the list. The reverse() function gives us this order.
+usernames.reverse()
+print(usernames)
+#Reverse is permanent, although you could follow up with another call to reverse() and get back the original order of the list.
+
+print()
+
+list_number = [3,2,1,4]
+list_number.sort()
+print(list_number)
+
+print()
+list_number =[3,2,1,4]
+print(sorted(list_number))
+print(list_number)
+
+print()
+
+list_number = [3,2,1,4]
+list_number.reverse()
+print(list_number)
+
+#You can find the length of a list using the len() function.
+usernames =['aaron','holms','joy','enson']
+print(len(usernames))
+
+print()
+#Exercise: 
+careers = ['programmer', 'truck driver','attorney', 'president']
+#Use the list.index() function to find the index of one career in your list.
+print(careers.index("attorney"))
+print(careers[-1].title())
+#Use the in function to show that this career is in your list.
+print('teacher' in careers)
+print('president' in careers)
+careers.append('dancer')
+print(careers)
+#Use the insert() function to add a new career at the beginning of the list.
+careers.insert(0, 'artist')
+print(careers)
+#Use a loop to show all the careers in your list.
+for career in careers:
+    print('How much will a ' + career + ' earn normally?')
+#Create the list you ended up with in Working List, but this time start your file with an empty list and fill it up using append() statements.
+working_list = []
+working_list.append('doctor')
+working_list.append('cook')
+working_list.append('pastor')
+working_list.append('lawyer')
+print(working_list)
+print('The first career in the job list is ' + working_list[0].title() + '.')
+print('The last career in the job list is ' + working_list[-1].title() + '.')
+print()
+
+#Print the list in its original order.
+for job in working_list:
+    print(job.title())
+#Print the list in alphabetical order.
+print()
+for job in sorted(working_list):
+    print(job.title())
+#Print the list in reverse alphabetical order.
+print()
+for job in sorted(working_list, reverse = True):
+    print(job.title())
+#Print the list in its original order.
+print()
+working_list = ['doctor','cook','pastor','lawyer']
+for job in working_list:
+    print(job.title())
+#Print the list in the reverse order from what it started.
+print()
+working_list.reverse()
+for job in working_list:
+    print(job.title())
+#Print the list in its original order.
+print()
+working_list = ['doctor','cook','pastor','lawyer']
+for job in working_list:
+    print(job.title())
+#Permanently sort the list in alphabetical order, and then print it out.
+print()
+working_list.sort()
+for job in working_list:
+    print(job.title())
+#Permanently sort the list in reverse alphabetical order, and then print it out.
+print()
+working_list.sort(reverse=True)
+for job in working_list:
+    print(job.title())
