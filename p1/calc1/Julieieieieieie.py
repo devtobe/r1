@@ -137,12 +137,13 @@ for index, kid in enumerate(kids):
 
 basketball_players = ('JeremyL','YaoM','StephenC','MichaelJ')
 for index, basketball_player in enumerate(basketball_players):
-    print(basketball_player + ' ranks ' + str(index+1) + '.\n')
+    print(basketball_player + ' ranks ' + str(index+1) +'.')
     print(basketball_players.index('YaoM'))
+print()
 
 #You can test whether an item is in a list using the "in" keyword. 
-    print("StephenC" in basketball_players)
-    print("ChuanH" in basketball_players)
+print("StephenC" in basketball_players)
+print("ChuanH" in basketball_players)
 
 print()
 
@@ -221,6 +222,7 @@ usernames =['aaron','holms','joy','enson']
 print(len(usernames))
 
 print()
+
 #Exercise: 
 careers = ['programmer', 'truck driver','attorney', 'president']
 #Use the list.index() function to find the index of one career in your list.
@@ -284,3 +286,24 @@ print()
 working_list.sort(reverse=True)
 for job in working_list:
     print(job.title())
+
+print()
+numbers = [3,5,1,2,6,4]
+print(numbers)
+for number in numbers:
+    print(number)
+numbers.sort()
+print(numbers)
+numbers.sort(reverse = True)
+print(numbers)
+numbers = [3,5,1,2,6,4]
+print(sorted(numbers))
+print(sorted(numbers, reverse = True))
+numbers = [3,5,1,2,6,4]
+numbers.reverse()
+print(numbers)
+numbers.append(10)
+print(numbers)
+numbers.insert(3, 11)
+print(numbers)
+print(len(numbers))
