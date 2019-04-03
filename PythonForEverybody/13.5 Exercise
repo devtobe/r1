@@ -1,0 +1,23 @@
+import urllib.parse, urllib.request, urllib.error
+import json
+import ssl
+
+# Ignore SSL certificate errors
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+
+url = input("Enter url: ")
+file_handle = urllib.request.urlopen(url, context=ctx).read()
+js_data = json.loads(file_handle)
+print(json.dumps(js_data, indent=4))
+
+content = js_data["comments"]
+sum = 0
+
+for item in content:
+    num = int(item["count"])
+    sum = sum + num
+
+print(sum)
+

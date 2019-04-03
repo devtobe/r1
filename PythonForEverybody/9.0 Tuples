@@ -1,0 +1,137 @@
+# Tuples are like list
+# using ()
+# immutable
+
+x = ("glenn", "sally", "Joe")
+print(x[2])
+print()
+
+y = (1, 2, 3)
+print(y)
+print(max(y))
+print()
+
+for num in y:
+    print(num)
+print()
+
+# lists are mutable:
+z = [9,8,7]
+z[2] = 6
+print(z)
+print()
+
+'''
+CANNOT do with Tuples:
+x.sort()
+x.append()
+x.reverse()
+
+
+
+Compare List w/ Tuples:
+for list:
+append, count, extend, index, insert, pop, remove, reverse, sort
+
+for tuples:
+count, index, sort
+
+
+
+Assignment to tuples:
+(x, y) = (2, 3)
+
+
+
+Compare TUPLES; we can also compare STRINGS
+(2,3,8) > (1,9,9)
+(0,7,2) < (0,8,1)
+("Jones", "Sally") < ("Jones", "Sam")
+("Jones", "Sally") > ("Adams", "Sam")
+
+'''
+
+dic = dict()
+dic["Pam"] = 2
+dic["Jon"] = 3
+dic["Apple"] = 8
+for key, value in dic.items():
+    print(key, value)
+print()
+
+print(sorted(dic.items()))
+print()
+
+
+# How to SORT by KEY:
+for key, value in sorted(dic.items()):
+    print(key, value)
+print()
+
+
+# How to SORT by VALUE:
+dic2 = {"banana":10, "pear":2, "apple":4, "orange":6, "berry": 9}
+fruit_list = []
+for key, value in dic2.items():
+    fruit_list.append((value, key)) # Lists can be consist of Tuples
+
+fruit_list = sorted(fruit_list)
+print(fruit_list)
+
+fruit_list = sorted(fruit_list, reverse = True)
+print(fruit_list)
+print()
+
+# How to get the top 10 most common words in Romeo.txt
+file = open(input("Please enter a file name: "))
+dic3 = dict()
+
+for line in file:
+    words = line.split()
+
+    for word in words:
+        dic3[word] = dic3.get(word, 0) +1
+
+list_word = []
+for key, value in dic3.items():
+    list_word.append((value, key))
+
+list_word = sorted(list_word, reverse = True)
+
+for value, key in list_word[:10]:
+    print(key, value)
+
+print()
+
+
+
+
+# How to get the top 10 most common words in romeo.txt in a SIMPLER way.
+file = open(input("Please enter a file name: "))
+dic3 = dict()
+
+for line in file:
+    words = line.split()
+
+    for word in words:
+        dic3[word] = dic3.get(word, 0) +1
+
+word_list = sorted([(value, key) for key, value in dic3.items()], reverse = True)
+
+for value, key in word_list[:10]:
+    print(key, value)
+
+print()
+
+
+
+
+
+
+
+
+
+
+
+
+
